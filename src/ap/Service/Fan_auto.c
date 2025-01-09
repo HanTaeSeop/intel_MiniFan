@@ -20,7 +20,7 @@ void Fan_autoRun()
 	{
 		case OFF :
 		Motor_Off();
-		if(timeTick - prevTime >= 10)
+		if(timeTick - prevTime >= 30)
 		{
 			prevTime = timeTick;
 			fanWindState = WEAK;
