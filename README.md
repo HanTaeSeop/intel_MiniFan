@@ -3,7 +3,7 @@
 - 프로젝트 기간: 2024.08.06 ~ 2024.08.09
 - 주요 기능:
     - 풍량 조절: PWM을 활용해 Low, Middle, High, Auto 모드 구현.
-    - 타이머 설정: 3초, 5초, 7초 단위로 자동 종료.
+    - 타이머 설정: 10초, 5분, 7분 단위로 자동 종료.
     - LCD 상태 표시: I2C LCD로 실시간 상태 정보 제공.
     - Serial 통신: 원격으로 풍량 및 타이머 제어 가능.
     - 부저 알림: 사용자 이벤트 발생 시 청각 피드백 제공.
@@ -24,21 +24,17 @@
 │   ├── 📂 Listener         # 이벤트 리스너 구현
 │   ├── 📂 Presenter        # UI 상태 갱신 처리
 │   ├── 📂 Service          # 비즈니스 로직 처리
+│   ├── 📂 Model            # 상태 저장   
 │   ├── apMain.c            # 메인 실행 파일
 │   └── apMain.h            # 메인 헤더 파일
 ├── 📂 Driver
 │   ├── 📂 Button           # 버튼 입력 처리
 │   ├── 📂 Buzzer           # 부저 제어
-│   ├── 📂 Fan              # 선풍기 모터 제어
+│   ├── 📂 MORTOR           # 선풍기 모터 제어
 │   ├── 📂 FND              # FND 출력 관리
-│   ├── 📂 I2C_LCD          # I2C LCD 상태 표시
 │   └── 📂 LCD              # LCD 출력 제어
-├── 📂 Model
-│   ├── Model_FanState      # 팬 상태 모델
-│   └── Model_TimerState    # 타이머 상태 모델
 ├── 📂 Periph
 │   ├── GPIO                # GPIO 핀 제어
-│   ├── I2C                 # I2C 통신 처리
 │   ├── TIM                 # 타이머 인터럽트 처리
 │   └── UART0               # UART0 통신 처리
 
@@ -82,7 +78,7 @@
 - **명령어**:
   - `WEAK`, `NORMAL`, `STRONG`, `OFF`와 같은 텍스트 명령어로 모터 및 타이머 제어.
  
-###  **S/W 스택**
+###  **SKILL**
 1. **타이머 인터럽트**:
    - OVF (OverFlow Interrupt)
      - FND 화면 최신화에 사용 (약 1.008ms)
@@ -92,6 +88,30 @@
    - 수신된 명령어를 내부 버퍼에 저장 후 FSM에서 처리.
 3. **LCD 업데이트**:
    - I2C 통신으로 풍량 상태와 타이머 정보를 표시.
-## 🖼 **구현 상세**
+##  **구현 상세**
 
 ###  **FSM 설계**
+![alt text](img/MINIFAN_FSM.jpg)
+
+### **S/W STACK**
+![alt text](img/SW_stack.jpg)
+
+##  **시연 영상**
+
+### [수동 제어 모드](https://drive.google.com/file/d/149j8o64nI5u5eW9uBqYclimtLQP_zgrO/view?usp=sharing)
+![alt text](gif/수동제어모드.gif)
+
+### [팬 속도 제어](https://drive.google.com/file/d/1Gy9ZgQZpViIaTx7sKxo-1d-yjzWNMSqR/view?usp=sharing)
+![alt text](gif/팬속도제어.gif)
+
+### [자동 모드](https://drive.google.com/file/d/1NTWOVqNGYCgdfyRx5it9c1xxGzLwExng/view?usp=sharing)
+![alt text](gif/자동모드.gif)
+
+### [타이머 설정](https://drive.google.com/file/d/1ClRsJgMMWoc26R4oO2JI8ulwaUx-Vle-/view?usp=sharing)
+![alt text](gif/타이머설정.gif)
+
+### [시리얼통신제어](https://drive.google.com/file/d/18L2TxKMN-7aSuCmTJh-_GzmyUUEg6Hyt/view?usp=sharing)
+![alt text](gif/시리얼통신제어.gif)
+
+### [시리얼통신제어2](https://drive.google.com/file/d/1nx_zPNHD6oGMiegrY0XCvMZDa9lffJlk/view?usp=sharing)
+![alt text](gif/시리얼통신제어2.gif)
