@@ -15,6 +15,7 @@
 | **C언어**            | 코드 작성 및 FSM 설계                            |
 | **I2C 통신**         | LCD와 FND를 연결해 실시간 상태 표시               |
 | **UART 통신**        | Serial 데이터를 통해 원격 제어 구현               |
+| **ComPortMaster**        | 시리얼 포트를 통한 데이터 통신을 관리하고 모니터링 하는 소프트웨어      |
 
 ## 📂 **디렉토리 구조**
 
@@ -98,20 +99,19 @@
 
 ##  **시연 영상**
 
-### [수동 제어 모드](https://drive.google.com/file/d/149j8o64nI5u5eW9uBqYclimtLQP_zgrO/view?usp=sharing)
-![alt text](gif/수동제어모드.gif)
+### [MANUAL MODE](https://drive.google.com/file/d/1X37EoyOC53tnysK8pTU-ZTfENI0gIBNC/view?usp=drive_link)
+![alt text](gif/MANUAL.gif)
 
-### [팬 속도 제어](https://drive.google.com/file/d/1Gy9ZgQZpViIaTx7sKxo-1d-yjzWNMSqR/view?usp=sharing)
-![alt text](gif/팬속도제어.gif)
+### [AUTO MODE](https://drive.google.com/file/d/1KGiZ1KC3k27PbFsKsn3VEPB5IdnZiL4e/view?usp=drive_link)
+![alt text](gif/AUTO.gif)
 
-### [자동 모드](https://drive.google.com/file/d/1NTWOVqNGYCgdfyRx5it9c1xxGzLwExng/view?usp=sharing)
-![alt text](gif/자동모드.gif)
+### [TIMER SETTING](https://drive.google.com/file/d/1XGbKD3ZzHhRqEvff3SPEgFYRt7JN2JAB/view?usp=drive_link)
+![alt text](gif/REARTIMER.gif)
 
-### [타이머 설정](https://drive.google.com/file/d/1ClRsJgMMWoc26R4oO2JI8ulwaUx-Vle-/view?usp=sharing)
-![alt text](gif/타이머설정.gif)
+### [TIMER START](https://drive.google.com/file/d/1ntSNZFDx7lAW5LWSc59XSABkcIeA_7BH/view?usp=drive_link)
+![alt text](gif/START.gif)
 
-### [시리얼통신제어](https://drive.google.com/file/d/18L2TxKMN-7aSuCmTJh-_GzmyUUEg6Hyt/view?usp=sharing)
-![alt text](gif/시리얼통신제어.gif)
+### [NETWORKING](https://drive.google.com/file/d/1nLT0Tv8iwy4gRQx3rUmE-kOZenSzUh3k/view?usp=drive_link)
+![alt text](gif/UART.gif)
 
-### [시리얼통신제어2](https://drive.google.com/file/d/1nx_zPNHD6oGMiegrY0XCvMZDa9lffJlk/view?usp=sharing)
-![alt text](gif/시리얼통신제어2.gif)
+
