@@ -100,18 +100,18 @@
 ##  **시연 영상**
 
 ### [MANUAL MODE](https://drive.google.com/file/d/1X37EoyOC53tnysK8pTU-ZTfENI0gIBNC/view?usp=drive_link)
-![alt text](gif/MANUAL.gif)
+![alt text](img/MANUAL.gif)
 
 ### [AUTO MODE](https://drive.google.com/file/d/1KGiZ1KC3k27PbFsKsn3VEPB5IdnZiL4e/view?usp=drive_link)
-![alt text](gif/AUTO.gif)
+![alt text](img/AUTO.gif)
 
 ### [TIMER SETTING](https://drive.google.com/file/d/1XGbKD3ZzHhRqEvff3SPEgFYRt7JN2JAB/view?usp=drive_link)
-![alt text](gif/REARTIMER.gif)
+![alt text](img/REARTIMER.gif)
 
 ### [TIMER START](https://drive.google.com/file/d/1ntSNZFDx7lAW5LWSc59XSABkcIeA_7BH/view?usp=drive_link)
-![alt text](gif/START.gif)
+![alt text](img/START.gif)
 
 ### [NETWORKING](https://drive.google.com/file/d/1nLT0Tv8iwy4gRQx3rUmE-kOZenSzUh3k/view?usp=drive_link)
-![alt text](gif/UART.gif)
+![alt text](img/UART.gif)
 
 
